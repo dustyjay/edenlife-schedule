@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Eden Schedule</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img src="./img/schedule.png" alt="Schedule" />
+              <span>Schedule</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img src="./img/history.png" alt="History" />
+              <span>History</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img src="./img/notifications.png" alt="Notifications" />
+              <span>Notifications</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img src="./img/chat.png" alt="Chat" />
+              <span>Chat</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="user">
+        <div class="user__image">
+          <img src="./img/dp.png" alt="Silm" />
+        </div>
+        <h4 class="user__greeting">Good Morning Silm</h4>
+      </section>
+
+      <section>
+        <div class="schedule">
+          <h2>Schedule</h2>
+          <button class="btn btn__reconfigure">Reconfigure Services</button>
+        </div>
+        <div class="cta__box--container">
+          <div class="cta__box green">
+            <div class="cta__box--header">
+              <div class="cta__text">
+                <p class="cta__title">
+                  Your account is inactive.
+                  <br />
+                  <strong>15% off</strong>
+                  offer until June 23.
+                </p>
+              </div>
+              <button class="cta__button green">
+                <span><s>N75,000</s></span>
+                <span><strong>Pay N62,800</strong></span>
+              </button>
+            </div>
+          </div>
+          <div class="cta__box orange">
+            <div class="cta__box--header">
+              <div class="cta__text">
+                <p class="cta__title">View your meals for the week</p>
+              </div>
+              <button class="cta__button orange" onclick="expandSchedule()">
+                <span>Check 'em</span>
+              </button>
+            </div>
+            <div class="cta__box--body"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="started">
+        <div class="get-started">
+          <h4>Getting Started</h4>
+          <p>Let's answer any question you have left!</p>
+        </div>
+        <div class="started__cta--box">
+          <div class="started__cta">
+            <div class="started__img purple">
+              <img src="./img/phone.png" alt="Call a gardener" />
+            </div>
+            <p class="started__text">Set up a call with your gardener</p>
+            <a href="#" class="started__link purple">
+              <span>Do it</span>
+              <img src="./img/phone-arrow.png" alt="Do it" />
+            </a>
+          </div>
+          <div class="started__cta">
+            <div class="started__img orange">
+              <img src="./img/play.png" alt="Watch a video" />
+            </div>
+            <p class="started__text">Lose yourself to this video</p>
+            <a href="#" class="started__link orange">
+              <span>Do it</span>
+              <img src="./img/play-arrow.png" alt="Do it" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="list__group">
+          <h4 class="list__title">Tomorrow</h4>
+          <div class="list__item">
+            <p class="list__time">9 - 10am</p>
+            <div class="list__desc">
+              Your cleaner is coming to give your apartment the looks.
+            </div>
+          </div>
+          <div class="list__item">
+            <p class="list__time">3 - 5pm</p>
+            <div class="list__desc pink">
+              Winter? We’re getting your AC fixed
+            </div>
+          </div>
+        </div>
+        <div class="list__group">
+          <h4 class="list__title">Friday, July 27</h4>
+          <div class="list__item">
+            <p class="list__time">9 - 10am</p>
+            <div class="list__desc">
+              Your cleaner is coming to give your apartment the looks.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="overlay"></div>
+  </body>
+
+  <script src="./js/main.js"></script>
+</html>

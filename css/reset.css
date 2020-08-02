@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Celebri;
+    font-size: 14px;
+    position: relative;
+}
+
+.no-overflow{
+    overflow: hidden;
+}
+
+@media screen and (min-width: 568px) {
+
+    body,
+    html {
+        font-size: 16px;
+    }
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+label {
+    font-weight: normal;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2em;
+    margin: 0;
+    font-weight: bold;
+    font-family: 'PT Serif', serif;
+}
+
+h1 {
+    font-size: 3.325rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.825rem;
+}
+
+button {
+    appearance: none;
+    background: transparent;
+    text-transform: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+[disabled] {
+    cursor: not-allowed;
+}
+
+blockquote {
+    margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-outer-spin-button,
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-clear-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="date"] {
+    padding-right: 0;
+}
+
+/* FONTS */
+
+@font-face {
+    src: url('../fonts/CerebriSans-Bold.ttf');
+    font-family: 'Celebri';
+    font-weight: bolder;
+}
+
+@font-face {
+    src: url('../fonts/CerebriSans-Medium.ttf');
+    font-family: 'Celebri';
+    font-weight: bold;
+}
+
+@font-face {
+    src: url('../fonts/CerebriSans-Regular.ttf');
+    font-family: 'Celebri';
+    font-weight: normal;
+}
+
+@font-face {
+    src: url('../fonts/CerebriSans-Light.ttf');
+    font-family: 'Celebri';
+    font-weight: lighter;
+}
