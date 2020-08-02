@@ -539,7 +539,7 @@ section {
 @keyframes openLargeImage {
 
     0% {
-        width: 85%;
+        width: 60px;
         max-width: 85%;
         left: 1rem;
         max-height: 40px;
@@ -592,7 +592,8 @@ background-color: rgba(0, 0, 0, 0); */
         background-color: #C6D6E4;
         border-radius: 15px;
         flex: 0 0 60px;
-        max-width: 60px;margin-right: 1.5rem;
+        max-width: 60px;
+        margin-right: 1.5rem;
         height: 60px;
     }
 }
