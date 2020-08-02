@@ -8,8 +8,8 @@ const mealBody = document.querySelector('.cta__box--body')
 let canCloseMeal = false
 
 const showLargeImage = (e) => {
-  e.classList.toggle('close')
   e.classList.toggle('open')
+  if (e.classList.contains('open')) e.classList.add('close')
 }
 
 const createMeal = (meal) => {

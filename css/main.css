@@ -247,9 +247,9 @@ section {
     animation: openLargeImage 1000ms forwards;
 }
 
-.meal__img.close {
+/* .meal__img.close {
     animation: closeLargeImage 1000ms forwards;
-}
+} */
 
 .meal__img.open img {
     width: 100%;
