@@ -243,6 +243,10 @@ section {
     left: 0;
 }
 
+.meal__img.double.hide {
+    opacity: 0;
+}
+
 .meal__img img {
     object-fit: contain;
 }

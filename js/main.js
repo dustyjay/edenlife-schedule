@@ -8,6 +8,7 @@ const mealBody = document.querySelector('.cta__box--body')
 let canCloseMeal = false
 
 const showLargeImage = (e) => {
+  e.classList.remove('hide')
   e.classList.toggle('open')
   // if (e.classList.contains('open')) e.classList.add('close')
 }
@@ -30,7 +31,7 @@ const createMeal = (meal) => {
   imgDouble.alt = meal.title
 
   imgDivDouble.style.backgroundColor = meal.color
-  imgDivDouble.classList.add('meal__img', 'double')
+  imgDivDouble.classList.add('meal__img', 'double', 'hide')
 
   imgDivDouble.appendChild(imgDouble)
 
