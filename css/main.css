@@ -175,8 +175,8 @@ section {
 }
 
 .cta__box--body.show {
-    max-height: 65vh;
-    height: 65vh;
+    max-height: 70vh;
+    height: 70vh;
     padding: 2rem 1rem;
     /* transition: 2000ms linear; */
     /* animation: openMealBody 1000ms forwards; */
@@ -187,7 +187,7 @@ section {
 }
 
 .cta__box.close {
-    animation: closeMealDiv 1000ms forwards;
+    animation: closeMealDiv 500ms forwards;
 }
 
 .cta__box.orange.translate {
