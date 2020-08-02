@@ -178,8 +178,6 @@ section {
     max-height: 70vh;
     height: 70vh;
     padding: 2rem 1rem;
-    /* transition: 2000ms linear; */
-    /* animation: openMealBody 1000ms forwards; */
 }
 
 .cta__box--body.show .meal__box {
@@ -200,7 +198,6 @@ section {
     padding: 0;
     height: 0;
     transition: max-height 500ms linear;
-    /* animation: closeMealBody 1000ms forwards; */
 }
 
 .cta__box.close .cta__box--header {
@@ -231,16 +228,6 @@ section {
 
 }
 
-/* .cta__box.open .cta__box--header {
-    height: unset;
-}
-
-.cta__box.open .cta__button {
-    flex: 0 0 80px;
-    border-radius: 0;
-    border-top-right-radius: 20px;
-}*/
-
 .cta__box.open .cta__text {
     background-color: #F9F5E1;
     border-top-left-radius: 20px;
@@ -260,7 +247,7 @@ section {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: top 400ms ease-in-out;
+    transition: top 700ms ease-in-out;
 }
 
 .meal__img img {
@@ -271,7 +258,6 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px;
-    /* transition: width 100ms ease-in-out, height 100ms ease-in-out; */
 }
 
 .meal__img.double {
@@ -293,12 +279,12 @@ section {
     border-radius: 0;
     max-width: 400px;
     object-fit: contain;
-    /* transition: width 100ms ease-in-out, height 100ms ease-in-out; */
 }
 
 .meal__img.close {
     background-repeat: no-repeat;
     z-index: 1;
+    top: 0;
     animation: closeLargeImage 600ms forwards;
 }
 
