@@ -8,7 +8,8 @@ const mealBody = document.querySelector('.cta__box--body')
 let canCloseMeal = false
 
 const showLargeImage = (e) => {
-  console.log('Large Image click', e)
+  e.classList.toggle('close')
+  e.classList.toggle('open')
 }
 
 const createMeal = (meal) => {
@@ -22,6 +23,17 @@ const createMeal = (meal) => {
   imgDiv.classList.add('meal__img')
 
   imgDiv.appendChild(img)
+  const imgDivDouble = document.createElement('div')
+  const imgDouble = document.createElement('img')
+  imgDivDouble.classList.add('close')
+
+  imgDouble.src = meal.largeImage
+  imgDouble.alt = meal.title
+
+  imgDivDouble.style.backgroundColor = meal.color
+  imgDivDouble.classList.add('meal__img', 'double')
+
+  imgDivDouble.appendChild(imgDouble)
 
   const mealTextDiv = document.createElement('div')
   const firstText = document.createElement('p')
@@ -37,11 +49,12 @@ const createMeal = (meal) => {
   const mealBox = document.createElement('div')
   mealBox.classList.add('meal__box')
   mealBox.appendChild(imgDiv)
+  mealBox.appendChild(imgDivDouble)
   mealBox.appendChild(mealTextDiv)
 
   mealBody.appendChild(mealBox)
 
-  imgDiv.onclick = function () {
+  imgDivDouble.onclick = function () {
     showLargeImage(this)
   }
 }
@@ -68,31 +81,13 @@ const meals = {
   toggleButton() {
     if (this.isOpen) {
       this.buttonContent = `<img src="./img/close.png" alt="Close Schedule" />`
-      title.innerHTML = this.title
-      button.innerHTML = this.buttonContent;
-      mealSchedule.classList.toggle('open')
-      if (canCloseMeal) mealSchedule.classList.toggle('close')
-      canCloseMeal = true
-
-      mealBody.classList.toggle('show')
       return true
     }
 
     this.buttonContent = "Check 'em"
-    // setTimeout(() => {
-    mealBody.classList.toggle('show')
-    // }, 10);
     setTimeout(() => {
       clearMealBody()
     }, 1000);
-    // setTimeout(() => {
-    mealSchedule.classList.toggle('open')
-    title.innerHTML = meals.title
-    button.innerHTML = meals.buttonContent;
-    if (canCloseMeal) mealSchedule.classList.toggle('close')
-    canCloseMeal = true
-
-    // }, 200);
   },
   items: [
     {
@@ -120,11 +115,16 @@ const meals = {
 };
 
 const changeContent = () => {
-  if (meals.isOpen) meals.items.forEach(el => {
+  if (meals.isOpen) meals.items.forEach(el =>
     createMeal(el)
-  }
-
   )
+  mealBody.classList.toggle('show')
+  mealSchedule.classList.toggle('open')
+  title.innerHTML = meals.title
+  button.innerHTML = meals.buttonContent;
+  if (canCloseMeal) mealSchedule.classList.toggle('close')
+  canCloseMeal = true
+
   overlay.classList.toggle('show')
   document.body.classList.toggle('no-overflow')
   document.querySelector('main').classList.toggle('no-overflow')
