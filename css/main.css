@@ -190,6 +190,10 @@ section {
     animation: closeMealBox 1000ms forwards;
 }
 
+.cta__box.close .meal__img.double {
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
     .cta__box.open {
         animation: openMealDivDesktop 1000ms forwards;

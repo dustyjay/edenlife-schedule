@@ -9,7 +9,7 @@ let canCloseMeal = false
 
 const showLargeImage = (e) => {
   e.classList.toggle('open')
-  if (e.classList.contains('open')) e.classList.add('close')
+  // if (e.classList.contains('open')) e.classList.add('close')
 }
 
 const createMeal = (meal) => {
@@ -25,7 +25,6 @@ const createMeal = (meal) => {
   imgDiv.appendChild(img)
   const imgDivDouble = document.createElement('div')
   const imgDouble = document.createElement('img')
-  imgDivDouble.classList.add('close')
 
   imgDouble.src = meal.largeImage
   imgDouble.alt = meal.title
