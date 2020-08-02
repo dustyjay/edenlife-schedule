@@ -84,15 +84,15 @@ const meals = {
     // }, 10);
     setTimeout(() => {
       clearMealBody()
-    }, 300);
-    setTimeout(() => {
-      mealSchedule.classList.toggle('open')
-      title.innerHTML = meals.title
-      button.innerHTML = meals.buttonContent;
-      if (canCloseMeal) mealSchedule.classList.toggle('close')
-      canCloseMeal = true
+    }, 1000);
+    // setTimeout(() => {
+    mealSchedule.classList.toggle('open')
+    title.innerHTML = meals.title
+    button.innerHTML = meals.buttonContent;
+    if (canCloseMeal) mealSchedule.classList.toggle('close')
+    canCloseMeal = true
 
-    }, 200);
+    // }, 200);
   },
   items: [
     {
